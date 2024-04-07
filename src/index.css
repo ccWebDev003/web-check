@@ -201,6 +201,8 @@ hr {
 	align-items: center;
 	position: relative;
 	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
 }
 .in-card-item p {
 	font-size: 24px;
