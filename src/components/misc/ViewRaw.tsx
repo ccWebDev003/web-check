@@ -83,22 +83,22 @@ const ViewRaw = (props: { everything: { id: string, result: any}[] }) => {
     URL.revokeObjectURL(url);
   }
   return (
-    <Card heading="View / Download Raw Data" styles={CardStyles}>
+    <Card heading="Ko'rish / Natijani yuklash" styles={CardStyles}>
       <div className="controls">
-        <Button onClick={handleDownload}>Download Results</Button>
-        <Button onClick={fetchResultsUrl}>{resultUrl ? 'Update Results' : 'View Results'}</Button>
-        { resultUrl && <Button onClick={() => setResultUrl('') }>Hide Results</Button> }
+        <Button onClick={handleDownload}>Natijalarni yuklash</Button>
+        <Button onClick={fetchResultsUrl}>{resultUrl ? 'Natijalarni o\'rnatish' : 'Natijalarni ko\'rish'}</Button>
+        { resultUrl && <Button onClick={() => setResultUrl('') }>Natijalarni yashirish</Button> }
       </div>
       { resultUrl && !error &&
       <>
         <StyledIframe title="Results, via JSON Hero" src={resultUrl} />
-        <small>Your results are available to view <a href={resultUrl}>here</a>.</small>
+        <small>Sizning natijalariz bu <a href={resultUrl}>yerda</a>.</small>
       </>
       }
       { error && <p className="error">{error}</p> }
       <small>
-        These are the raw results generated from your URL, and in JSON format.
-        You can import these into your own program, for further analysis.
+      Bular URL manzilingizdan va JSON formatida yaratilgan xom natijalardir.
+         Qo'shimcha tahlil qilish uchun ularni o'z dasturingizga import qilishingiz mumkin.
       </small>
     </Card>
   );
