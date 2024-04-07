@@ -32,7 +32,8 @@ function App() {
     <Container>
       <Routes>
         <Route path="*" element={<NotFound />} />
-        <Route path="/" element={<Home />} />
+        <Route path='/' element={<Main />} />
+        <Route path="/check-url" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/results/:address" element={<Results />} />
       </Routes>
