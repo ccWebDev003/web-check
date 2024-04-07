@@ -1,18 +1,14 @@
 {
   "name": "web-check",
-  "version": "1.1.2",
+  "version": "1.1.0",
   "private": false,
   "description": "All-in-one OSINT tool for analyzing any website",
   "repository": "github:lissy93/web-check",
-  "homepage": "https://web-check.xyz",
-  "license": "MIT",
+  "homepage": "https://riacoders.uz",
+  "license": "ISC",
   "author": {
-    "name": "Alicia Sykes",
-    "email": "alicia@omg.lol"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/Lissy93"
+    "name": "Istam Rustamov",
+    "email": "admin@riacoders.uz"
   },
   "scripts": {
     "dev": "netlify dev",
@@ -25,11 +21,15 @@
     "dev:node": "npx concurrently --names \"frontend,backend\" \"REACT_APP_API_ENDPOINT='http://localhost:3001/api' npx react-scripts start\" \"PLATFORM='node' DISABLE_GUI='true' PORT='3001' API_CORS_ORIGIN='*' npx nodemon server\""
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.14",
     "@netlify/functions": "^1.6.0",
     "@sentry/react": "^7.60.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
+    "@types/d3": "^7.4.3",
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.4",
     "@types/react": "^18.2.15",
@@ -44,6 +44,8 @@
     "connect-history-api-fallback": "^2.0.0",
     "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
+    "d3": "^7.9.0",
+    "dns.js": "^1.0.1",
     "dotenv": "^16.3.1",
     "express-rate-limit": "^7.2.0",
     "flatted": "^3.2.7",
@@ -53,10 +55,12 @@
     "netlify-cli": "^15.9.1",
     "perf_hooks": "^0.0.1",
     "psl": "^1.9.0",
-    "puppeteer": "^20.9.0",
+    "puppeteer": "^22.6.1",
     "puppeteer-core": "^21.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-globe.gl": "^2.27.2",
+    "react-icons": "^5.0.1",
     "react-masonry-css": "^1.0.16",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
