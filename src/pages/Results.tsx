@@ -79,7 +79,7 @@ const ResultsOuter = styled.div`
 	flex-direction: column;
 	.masonry-grid {
 		display: flex;
-		width: auto;
+		width: 100vw;
 	}
 	.masonry-grid-col section {
 		margin: 1rem 0.5rem;
