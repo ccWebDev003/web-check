@@ -7,6 +7,7 @@ import Results from 'pages/Results';
 import About from 'pages/About';
 import NotFound from 'pages/NotFound';
 import colors from 'styles/colors';
+import Main from 'pages/Main'
 
 const Container = Styled.main`
   background: ${colors.background};
