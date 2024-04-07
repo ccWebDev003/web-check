@@ -347,4 +347,29 @@ hr {
 	.Footer {
 		padding: 30px;
 	}
+	.res-out {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	.res-nav-info {
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		border-top: 1px solid #787878;
+		margin-top: 10px;
+	}
+	.res-nav-text {
+		font-size: 16px !important;
+	}
+	.res-progress {
+		margin-top: 20px !important;
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	.res-loader {
+		margin-top: 20px !important;
+	}
 }
