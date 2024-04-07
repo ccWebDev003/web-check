@@ -6,7 +6,6 @@ import styled from 'styled-components'
 
 import Heading from 'components/Form/Heading'
 import Modal from 'components/Form/Modal'
-import Nav from 'components/Form/Nav'
 import { RowProps } from 'components/Form/Row'
 import colors from 'styles/colors'
 
@@ -73,6 +72,7 @@ import {
 	parseShodanResults,
 } from 'utils/result-processor'
 import RankCard from 'components/Results/Rank'
+import Nav from 'components/Form/Nav'
 
 const ResultsOuter = styled.div`
 	display: flex;
@@ -994,22 +994,24 @@ const Results = (): JSX.Element => {
 	}
 
 	return (
-		<ResultsOuter>
+		<ResultsOuter className='res-out'>
 			<Nav>
-				{address && (
-					<Heading color={colors.textColor} size='medium'>
-						{addressType === 'url' && (
-							<a href={address}>
-								<img
-									width='32px'
-									src={`https://icon.horse/icon/${makeSiteName(address)}`}
-									alt=''
-								/>
-							</a>
-						)}
-						{makeSiteName(address)}
-					</Heading>
-				)}
+				<div className='res-nav-info'>
+					{address && (
+						<Heading className='res-nav-text' color={colors.textColor} size='medium'>
+							{addressType === 'url' && (
+								<a href={address}>
+									<img
+										width='32px'
+										src={`https://icon.horse/icon/${makeSiteName(address)}`}
+										alt=''
+									/>
+								</a>
+							)}
+							{makeSiteName(address)}
+						</Heading>
+					)}
+				</div>
 			</Nav>
 			<ProgressBar
 				loadStatus={loadingJobs}
