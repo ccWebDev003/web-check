@@ -372,4 +372,12 @@ hr {
 	.res-loader {
 		margin-top: 20px !important;
 	}
+	.masonry-grid-col section {
+		margin: 0 !important;
+	}
+}
+@media screen and (max-width: 564px) {
+	.res-nav-info {
+		border-top: 10px solid #787878;
+	}
 }
